@@ -7,5 +7,5 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id)
 print(pipe)
 generated_image = pipe(image_prompt)
 
-generated_image.save("retro_cityscape.png")
+generated_image[0]["image"].save("retro_cityscape.png")
 print("Image generated and saved!")
